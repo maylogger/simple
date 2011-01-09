@@ -1,0 +1,55 @@
+// setup
+
+$all-width: 1000px !default;
+$sidebar-width: 250px !default;
+$sidebar-location: right !default;
+$padding: 0px !default;
+
+// layout
+
+body {
+	min-width: $all-width;
+}
+
+@mixin wrapper {
+	margin: 0 auto;
+	width: $all-width;
+}
+
+@mixin main {
+	clear: none;
+	width: 100%;
+	@if $sidebar-location == right {
+		float: left;
+		margin: 0 ( - $sidebar-width - $padding ) 0 0;
+		.inner {
+			margin-right: $sidebar-width + $padding;
+			padding: $padding;
+			padding-right: 0;
+		}
+	}
+	@if $sidebar-location == left {
+		float: right;
+		margin: 0 0 0 ( - $sidebar-width - $padding );
+		.inner {
+			margin-left: $sidebar-width + $padding;
+			padding: $padding;
+			padding-left: 0;
+		}
+	}
+}
+
+@mixin sidebar {
+	clear: none;
+	width: $sidebar-width;
+	.inner {
+		overflow: hidden;
+		padding: $padding;
+	}
+	@if $sidebar-location == right {
+		float: right;
+	}
+	@if $sidebar-location == left {
+		float: left;
+	}
+}
