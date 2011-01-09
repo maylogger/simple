@@ -1,0 +1,15 @@
+simple: 超簡易2欄版面產生器
+
+必須：
+你必須使用handlino出品的compass.app
+http://compass.handlino.com
+
+安裝simple：
+把整個 simple 資料夾放到 ~/.compass/extensions/ 裡面
+再開啟compass.app
+
+使用simple：
+1. 從選單 Create Compass Project 裡頭點選 simple > project
+2. 選擇你要儲存的地方
+3. 你可以預覽 simple.html 已呈現2欄排版
+4. 打開資料夾編輯 main.scss 修改寬度等參數即可造出你想要的大小與sidebar位置
