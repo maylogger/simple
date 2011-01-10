@@ -1,24 +1,25 @@
-simple: 超簡易2欄版面產生器
+h1. simple: 超簡易2欄版面產生器
 
-必須：
-你必須使用handlino出品的compass.app
-http://compass.handlino.com
+h2. 基本需求
+* 你必須使用 handlino 出品的 compass.app
+** "http://compass.handlino.com(compass.app)":http://compass.handlino.com
 
-安裝simple：
-把整個 simple 資料夾放到 ~/.compass/extensions/ 裡面
-再開啟compass.app
+h2. 安裝 simple
+* 把整個 simple 資料夾放到 ~/.compass/extensions/ 裡面
+* 再開啟 compass.app
 
-使用simple：
-1. 從選單 Create Compass Project 裡頭點選 simple > project
-2. 選擇你要儲存的地方以及儲存專案名稱 例： your_project
-3. 你可以預覽 your_project/simple.html 已呈現2欄排版
-4. 打開資料夾編輯 your_project/src/main.scss 修改寬度等參數即可造出你想要的大小與 sidebar 位置
-5. 將 your_project/src/main.scss 裡面第 26 行 @import "simple/debug"; 整行刪除，就不會出現檢視版面位置的底色。
+h2. 使用 simple
+# 從選單 Create Compass Project 裡頭點選 simple > project
+# 選擇你要儲存的地方以及儲存專案名稱 例： your_project
+# 你可以預覽 your_project/simple.html 已呈現2欄排版
+# 打開資料夾編輯 your_project/src/main.scss 修改寬度等參數即可造出你想要的大小與 sidebar 位置
+# 將 your_project/src/main.scss 裡面第 26 行 @import "simple/debug"; 整行刪除，就不會出現檢視版面位置的底色。
 
-進階使用：
+h2. 進階使用
 * 參考 simple.html 與 src/main.scss 可改寫符合您自己語意的html
 
-$all-width: 整個版面的總寬度，單位px
-$sidebar-width: 側欄的寬度，單位px
-$sidebar-location: 側欄的位置，只能填 left 或是 right
-$padding: 兩欄內容物邊界，單位px
+h2. 參數說明
+* $all-width: 整個版面的總寬度，單位px
+* $sidebar-width: 側欄的寬度，單位px
+* $sidebar-location: 側欄的位置，只能填 left 或是 right
+* $padding: 兩欄內容物邊界，單位px
